@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bitcoin dips under $80K, Korea's crypto tax may slip, Initia halts, Solana speeds up"
-date: 2026-10-25 22:30:00 +0100
+date: 2026-10-25 21:00:00 +0100
 ---
 ![SOL/USD daily candlestick chart, last 90 days]({{ "/assets/sol-usd-90d-2026-10-25.png" | relative_url }})
 
