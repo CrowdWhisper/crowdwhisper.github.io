@@ -1,0 +1,16 @@
+{%- comment -%} Data-driven social icons: one <a> per entry in _data/socials.yml. {%- endcomment -%}
+<ul class="socials">
+  {%- for s in site.data.socials -%}
+  {%- assign lbl = s.label | default: s.name -%}
+  <li><a class="social-link" href="{{ s.url }}" rel="noopener me" target="_blank" aria-label="{{ lbl | escape }}" title="{{ lbl | escape }}">
+    {%- case s.icon -%}
+    {%- when "x" -%}
+    <svg class="social-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    {%- when "telegram" -%}
+    <svg class="social-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21.94 3.47a1.2 1.2 0 0 0-1.22-.2L2.7 10.2a1 1 0 0 0 .08 1.88l4.6 1.5 1.78 5.6a1 1 0 0 0 1.65.43l2.5-2.38 4.6 3.4a1.2 1.2 0 0 0 1.9-.73l3-16.5a1.2 1.2 0 0 0-.87-1.93zM9.4 13.3l8.9-5.6-6.9 6.9-.3 3.1z"/></svg>
+    {%- else -%}
+    <span class="social-text">{{ s.name | escape }}</span>
+    {%- endcase -%}
+  </a></li>
+  {%- endfor -%}
+</ul>

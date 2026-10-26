@@ -1,0 +1,12 @@
+# Social links shown in the site footer (rendered by _includes/socials.html).
+# ADD ANOTHER SOCIAL: append one entry below (name, url, icon). Nothing else to change.
+#   icon keys with a ready inline SVG: x, telegram
+#   (a new key needs one more {% when %} branch with its SVG in _includes/socials.html)
+# Ready for later, e.g. the Telegram channel (uncomment and set the real URL):
+#   - name: Telegram
+#     url: https://t.me/YOUR_CHANNEL
+#     icon: telegram
+- name: X
+  label: CrowdWhisper on X
+  url: https://x.com/CrowdWhisperers
+  icon: x

@@ -167,3 +167,43 @@ details.sources li:target {
   .section-head { gap: 10px; }
   .section-head h2 { font-size: 1.15rem; }
 }
+
+// Header avatar and footer socials (BitPet t99u, 2026-10-26)
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  vertical-align: top;
+}
+
+.site-title .site-logo {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.site-footer .socials {
+  list-style: none;
+  margin: 0.5em 0 0;
+  padding: 0;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.site-footer .socials li { margin: 0; }
+
+.site-footer .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;     // comfortable tap target on a phone
+  color: #424242;
+}
+
+.site-footer .social-link:hover { color: #111; }
+.site-footer .social-icon { display: block; }
