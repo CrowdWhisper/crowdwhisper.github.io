@@ -14,30 +14,36 @@ date: 2026-10-25 21:00:00 +0100
 {% capture t %}**Initia** halted its main chain and rollups on October 23 at 15:41 UTC after an attack [11][12][13]. The project says a software bug let an attacker credit itself tokens with no backing, and about $2.7 million went out to Ethereum before the halt [11][12]. We checked on-chain: about 1,135 ETH sits at the address the project named [12][14]. Initia says its own INIT token was not minted, and it expects a fix and audit within days, with no restart date yet [11][12].{% endcapture %}
 {% include news-item.html avatar="logo-initia.png" alt="Initia" text=t %}
 
-{% include chart-figure.html src="/assets/sol-usd-90d-2026-10-25.png" alt="SOL/USD daily candlestick chart, last 90 days" %}
-
 {% capture t %}**Our currency of the day is SOL.** Solana switched its core consensus protocol, called Alpenglow, on October 21, and on-chain records confirm the handover at slot 459,653,000, right after a block timed 13:54 UTC [14][15][16]. The design target is about 150 milliseconds to finality, down from about 12.8 seconds, and nobody has independently measured it yet [15][16]. In the chart above, SOL traded near $102 on October 25, after a peak near $125 on September 27 [4]. An upgrade says nothing certain about price. We left out claims without two independent origins.{% endcapture %}
-{% include news-item.html avatar="coin-sol.png" alt="Solana" text=t %}
+{% include currency-section.html avatar="coin-sol.png" alt="Solana" title="Currency of the day: SOL" text=t chart_src="/assets/sol-usd-90d-2026-10-25.png" chart_alt="SOL/USD daily candlestick chart, last 90 days" %}
+
+{% capture t %}On 22 May 2010, a Bitcoin forum user called laszlo reported that he had traded 10,000 bitcoins for pizza, a deal he had proposed on the forum four days earlier [17]. At about $80,000 per bitcoin, the price in this article, those coins would be worth roughly $800 million [4].{% endcapture %}
+{% include did-you-know.html avatar="fact-pizza.png" alt="Pizza" text=t %}
 
 {% include team-picture.html %}
 
-## Sources (links checked 2026-10-25)
-Tier A = official, primary or major financial press. Tier B = established crypto press with own reporting. Items marked "text copy" reproduce a primary statement and are not counted as independent confirmation.
-1. CoinDesk (B), "Crypto under weekend pressure, bitcoin slides below $80,000": https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations
-2. Bitcoin.com News (B), "Bitcoin Price Sinks to $79,146 as Liquidations Rock Weekend Trading": https://news.bitcoin.com/market-updates/bitcoin-price-sinks-to-79146-as-liquidations-rock-weekend-trading/
-3. Yahoo Finance, from BeInCrypto (B), "Bitcoin Loses $80,000 as $200 Million in Leverage Unwinds in an Hour": https://finance.yahoo.com/markets/crypto/articles/bitcoin-loses-80-000-200-154722552.html
-4. Kraken public API (OHLC) and Coinbase Exchange public API (candles), BTC/USD hourly and SOL/USD daily (A, primary exchange data): https://docs.kraken.com/api/docs/rest-api/get-ohlc-data and https://docs.cdp.coinbase.com/exchange/reference/exchangerestapi_getproductcandles
-5. The Block (B), "Crypto longs lose $404 million in four hours as bitcoin briefly slips below $80,000" (Coinglass data; blocks scripts, loads in a browser): https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608
-6. Source 3 above (Coinglass data, $837M snapshot).
-7. U.S. Federal Reserve (A), FOMC 2026 calendar: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
-8. The Asia Business Daily (B), "Cheong Wa Dae Leans Toward a 'Fourth Deferral' of Virtual Asset Tax" (loads in a browser; blocks this server): https://www.asiae.co.kr/en/article/2026102517522309926
-9. Yonhap (A, national news agency), in Korean, "Cheong Wa Dae: crypto tax re-deferral 'under review, nothing decided'": https://www.yna.co.kr/view/MYH20261025011500038
-10. Republic of Korea National Assembly bill record 2220914 (A, official; bill moving the start to 1 Jan 2029): https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2220914/detailRP . A second bill, no. 2221923, is listed at https://lawtrack.kr/bill/2221923
-11. The Block (B), "Initia halts network after security incident as attacker reportedly mints tokens": https://www.theblock.co/news/defi/2026-10-23-initia-halts-network-after-security-incident-attacker-reportedly-mints-tokens-427755
-12. Initia's official statement of 24 Oct (A, primary; the original X post was not read directly, text copy via Bitcoin Insider): https://www.bitcoininsider.org/article/initia-movevm-exploit-network-halt
-13. Cointelegraph (B), "Initia Exploit: Reports of Hackers Minting Tokens, Moving Millions to Ethereum": https://cointelegraph.com/news/initia-halts-blockchain-exploit-drained
-14. 0xCERT security advisory 0xCERT-2026-0267 (B, on-chain analysis by D2 Finance) and the public Ethereum and Solana node data we queried on 25 Oct: https://www.0xcert.com/advisory/0xCERT-2026-0267
-15. Solana Foundation (A), "Alpenglow": https://solana.com/upgrades/alpenglow
-16. Anza press release (A for the launch, promotional for performance claims), 21 Oct: https://www.prnewswire.com/news-releases/alpenglow-is-live-on-solana-the-worlds-fastest-finality-on-a-global-network-302915579.html
+<details class="sources" id="sources" markdown="0">
+<summary>Sources (17), links checked 25 and 26 Oct, tap to open</summary>
+<p class="tier-legend">Tier: A = official, primary or major financial press. B = established crypto press with own reporting. "Text copy" = reproduces a primary statement, not counted as independent confirmation.</p>
+<ol>
+<li id="src-1"><a href="https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations">CoinDesk, crypto under weekend pressure, bitcoin slides below $80,000</a> (B)</li>
+<li id="src-2"><a href="https://news.bitcoin.com/market-updates/bitcoin-price-sinks-to-79146-as-liquidations-rock-weekend-trading/">Bitcoin.com News, bitcoin price sinks to $79,146</a> (B)</li>
+<li id="src-3"><a href="https://finance.yahoo.com/markets/crypto/articles/bitcoin-loses-80-000-200-154722552.html">Yahoo Finance, from BeInCrypto, bitcoin loses $80,000</a> (B)</li>
+<li id="src-4"><a href="https://docs.kraken.com/api/docs/rest-api/get-ohlc-data">Kraken API, OHLC data</a> and <a href="https://docs.cdp.coinbase.com/exchange/reference/exchangerestapi_getproductcandles">Coinbase Exchange API, candles</a>, BTC/USD hourly and SOL/USD daily (A, primary exchange data)</li>
+<li id="src-5"><a href="https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608">The Block, crypto longs lose $404 million in four hours</a> (B, Coinglass data; blocks scripts, loads in a browser)</li>
+<li id="src-6">Source <a href="#src-3">3</a> above (Coinglass data, $837M snapshot).</li>
+<li id="src-7"><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">U.S. Federal Reserve, FOMC 2026 calendar</a> (A)</li>
+<li id="src-8"><a href="https://www.asiae.co.kr/en/article/2026102517522309926">The Asia Business Daily, Cheong Wa Dae leans toward a &quot;fourth deferral&quot;</a> (B; loads in a browser, blocks this server)</li>
+<li id="src-9"><a href="https://www.yna.co.kr/view/MYH20261025011500038">Yonhap, Cheong Wa Dae: crypto tax re-deferral &quot;under review&quot;</a> (A, national news agency; in Korean)</li>
+<li id="src-10"><a href="https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2220914/detailRP">Korean National Assembly, bill 2220914</a> (A, official; moves the start to 1 Jan 2029); second bill, no. 2221923: <a href="https://lawtrack.kr/bill/2221923">LawTrack</a></li>
+<li id="src-11"><a href="https://www.theblock.co/news/defi/2026-10-23-initia-halts-network-after-security-incident-attacker-reportedly-mints-tokens-427755">The Block, Initia halts network after security incident</a> (B)</li>
+<li id="src-12"><a href="https://www.bitcoininsider.org/article/initia-movevm-exploit-network-halt">Initia statement of 24 Oct, text copy via Bitcoin Insider</a> (A, primary; the original X post was not read directly)</li>
+<li id="src-13"><a href="https://cointelegraph.com/news/initia-halts-blockchain-exploit-drained">Cointelegraph, Initia exploit: hackers minting tokens</a> (B)</li>
+<li id="src-14"><a href="https://www.0xcert.com/advisory/0xCERT-2026-0267">0xCERT advisory 0xCERT-2026-0267</a> (B, on-chain analysis by D2 Finance), plus public Ethereum and Solana node data we queried on 25 Oct</li>
+<li id="src-15"><a href="https://solana.com/upgrades/alpenglow">Solana Foundation, Alpenglow</a> (A)</li>
+<li id="src-16"><a href="https://www.prnewswire.com/news-releases/alpenglow-is-live-on-solana-the-worlds-fastest-finality-on-a-global-network-302915579.html">Anza press release, Alpenglow is live, 21 Oct</a> (A for the launch, promotional for performance claims)</li>
+<li id="src-17"><a href="https://bitcointalk.org/index.php?topic=137.0">Bitcointalk forum thread &quot;Pizza for bitcoins?&quot;, posts of 18 and 22 May 2010</a> (A, primary)</li>
+</ol>
+</details>
 
-*Data note: chart data is 90 daily SOL/USD candles from Kraken (28 Jul to 25 Oct 2026 UTC, last candle still forming), closes within 0.05% of Coinbase. Chart and illustration generated by AI. This article is general information, not financial advice.*
+<p class="data-note" markdown="0"><em>Data note: chart data is 90 daily SOL/USD candles from Kraken (28 Jul to 25 Oct 2026 UTC, last candle still forming), closes within 0.05% of Coinbase. Chart and illustration generated by AI. This article is general information, not financial advice.</em></p>

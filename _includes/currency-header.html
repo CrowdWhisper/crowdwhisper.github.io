@@ -1,0 +1,9 @@
+{%- comment -%}
+  Header row of the "Currency of the day" section: a real <h2> with the same round 40px avatar beside it.
+  Params: avatar (file in /assets/avatars/, the coin of the day, e.g. coin-bch.png), title (e.g. "Currency of the day: BCH"), alt (optional).
+  Normally used through currency-section.html.
+{%- endcomment -%}
+<div class="section-head">
+  <img class="avatar" src="{{ '/assets/avatars/' | append: include.avatar | relative_url }}" alt="{{ include.alt | default: '' }}" width="40" height="40" loading="lazy">
+  <h2 id="currency-of-the-day">{{ include.title }}</h2>
+</div>

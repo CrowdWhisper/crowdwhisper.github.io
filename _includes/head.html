@@ -6,4 +6,18 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
   <script data-goatcounter="https://crowdwhisper.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script>
+    // Open the collapsed Sources block when a citation link [n] (#src-n) or #sources is followed.
+    (function () {
+      function openSources() {
+        var h = location.hash;
+        if (h === '#sources' || h.indexOf('#src-') === 0) {
+          var d = document.getElementById('sources');
+          if (d) { d.open = true; var t = document.getElementById(h.slice(1)); if (t) { t.scrollIntoView(); } }
+        }
+      }
+      window.addEventListener('hashchange', openSources);
+      document.addEventListener('DOMContentLoaded', openSources);
+    })();
+  </script>
 </head>

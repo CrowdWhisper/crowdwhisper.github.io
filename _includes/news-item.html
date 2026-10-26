@@ -4,10 +4,12 @@
   Use capture for long text:
     {% capture t %}**Bitcoin** fell ... [1][2]{% endcapture %}
     {% include news-item.html avatar="coin-btc.png" alt="Bitcoin" text=t %}
+  Citation markers [n] become links to the Sources list (see cite-links.html).
 {%- endcomment -%}
+{%- capture ni_html %}{{ include.text | markdownify }}{% endcapture -%}
 <div class="item">
   <img class="avatar" src="{{ '/assets/avatars/' | append: include.avatar | relative_url }}" alt="{{ include.alt | default: '' }}" width="40" height="40" loading="lazy">
   <div class="item-text">
-{{ include.text | markdownify }}
+{% include cite-links.html html=ni_html %}
   </div>
 </div>
