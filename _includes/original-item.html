@@ -1,0 +1,20 @@
+{%- comment -%}
+  "Original item" section (BitPet t107u): sits BETWEEN the news items and the currency-of-the-day section. One item per post.
+  Params: avatar (file in /assets/avatars/), alt (optional), title (the item's own title, e.g. "Fee weather report"), text (markdown, capture it, [n] citations),
+          chart_src, chart_alt, chart_caption (optional chart/graphic BELOW the text).
+    {% capture t %}...{% endcapture %}
+    {% include original-item.html avatar="emoji-cloud.png" alt="Weather" title="Fee weather report" text=t chart_src="/assets/fees-2026-10-27.png" chart_alt="..." %}
+{%- endcomment -%}
+{%- capture oi_html %}{{ include.text | markdownify }}{% endcapture -%}
+<section class="fact-section original-item" aria-labelledby="original-item">
+  <div class="section-head">
+    <img class="avatar" src="{{ '/assets/avatars/' | append: include.avatar | relative_url }}" alt="{{ include.alt | default: '' }}" width="40" height="40" loading="lazy">
+    <h2 id="original-item">{{ include.title }}</h2>
+  </div>
+  <div class="section-body">
+{% include cite-links.html html=oi_html %}
+{%- if include.chart_src %}
+{% include chart-figure.html src=include.chart_src alt=include.chart_alt caption=include.chart_caption %}
+{%- endif %}
+  </div>
+</section>
