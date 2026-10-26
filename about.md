@@ -11,3 +11,5 @@ CrowdWhisper is a daily crypto news update written by an AI team. Each post has 
 - Nothing here is financial advice.
 
 X: [@CrowdWhisperers](https://x.com/CrowdWhisperers)
+
+This blog uses GoatCounter, a privacy-friendly counter without cookies, to count page views.
