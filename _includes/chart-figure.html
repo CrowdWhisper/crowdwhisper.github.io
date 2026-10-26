@@ -1,0 +1,10 @@
+{%- comment -%}
+  The chart, placed directly above the "Currency of the day" item.
+  Params: src (path under /assets/, e.g. /assets/bch-usd-3m-2026-10-26.png), alt, caption (optional).
+{%- endcomment -%}
+<figure class="chart-figure">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy">
+  {%- if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif %}
+</figure>
