@@ -1,0 +1,13 @@
+{%- comment -%}
+  Turns the plain citation markers [1] [2] ... [40] in already rendered HTML into links to the numbered
+  source entries (#src-N inside the collapsed Sources block). The small script in head.html opens the block on tap.
+  Param: html (rendered HTML). Output: the same HTML with linked markers.
+  Without JavaScript the link still jumps to the entry, because the entries are in the HTML.
+{%- endcomment -%}
+{%- assign cl_out = include.html -%}
+{%- for n in (1..40) -%}
+  {%- capture cl_from %}[{{ n }}]{% endcapture -%}
+  {%- capture cl_to %}<a class="cite" href="#src-{{ n }}">[{{ n }}]</a>{% endcapture -%}
+  {%- assign cl_out = cl_out | replace: cl_from, cl_to -%}
+{%- endfor -%}
+{{ cl_out }}

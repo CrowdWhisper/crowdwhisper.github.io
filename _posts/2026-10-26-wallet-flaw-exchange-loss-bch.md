@@ -14,31 +14,37 @@ date: 2026-10-26 09:30:00 +0100
 {% capture t %}**Blast**, an Ethereum layer 2 network, ends withdrawals through its normal app on October 26 [8][9]. After that, funds can still leave through its bridge contracts on Ethereum [8][10]. Blast said on October 2 that it is shutting down because its costs exceed its revenue [8][9]. The network once held more than $2 billion in deposits and about $32 million at the start of October, according to DeFiLlama data cited by The Block [8].{% endcapture %}
 {% include news-item.html avatar="logo-blast.png" alt="Blast" text=t %}
 
-{% include chart-figure.html src="/assets/bch-usd-3m-2026-10-26.png" alt="BCH/USD daily candlestick chart, last 3 months" %}
-
 {% capture t %}**BCH** is our currency of the day, because CME Group began trading Bitcoin Cash futures on October 19 [11][12]. Futures are contracts to buy or sell at a set price later, and CME is a large regulated US exchange. Trading firms FalconX and GSR made the first block trade, CME said on October 20 [12][13]. On Kraken, BCH closed at about $217 on July 26 and $279 on October 25 [14]. Its 3-month range ran from about $200 on August 14 to about $366 on September 23 [14].{% endcapture %}
-{% include news-item.html avatar="coin-bch.png" alt="Bitcoin Cash" text=t %}
+{% capture fn %}**Checks**: Coinbase and CoinGecko prices match Kraken within 0.3% [14][15], and we left out claims with only one source.{% endcapture %}
+{% include currency-section.html avatar="coin-bch.png" alt="Bitcoin Cash" title="Currency of the day: BCH" text=t chart_src="/assets/bch-usd-3m-2026-10-26.png" chart_alt="BCH/USD daily candlestick chart, last 3 months" footnote=fn %}
 
-**Checks**: Coinbase and CoinGecko prices match Kraken within 0.3% [14][15], and we left out claims with only one source.
+{% capture t %}The name of the early bitcoin exchange Mt. Gox stands for "Magic: The Gathering Online eXchange" [16]. Its creator, Jed McCaleb, registered the domain in 2007 for trading cards of that online game, and in July 2010 he reused it to trade bitcoin [16][17].{% endcapture %}
+{% include did-you-know.html avatar="fact-cards.png" alt="Playing cards" text=t %}
 
 {% include team-picture.html %}
 
-## Sources (links checked 2026-10-26)
-Tier A = official, primary or major financial press. Tier B = established crypto press with own reporting. Tier C = aggregator, used only as a cross-check.
-1. Electrum security advisory GHSA-6jp4-8v48-cc5v (A, primary): https://github.com/spesmilo/electrum/security/advisories/GHSA-6jp4-8v48-cc5v
-2. Electrum release notes, version 4.8.3 (A, primary): https://raw.githubusercontent.com/spesmilo/electrum/4.8.3/RELEASE-NOTES
-3. CoinDesk (B), "Bitcoin wallet bug let rogue servers steal funds when users tried to speed up payments": https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments
-4. Bitcoin.com News (B), "Electrum Wallet Attack Hid Bitcoin Theft Behind a Fee Increase": https://news.bitcoin.com/security/electrum-wallet-attack-hid-bitcoin-theft-behind-a-fee-increase/
-5. CoinDCX (A, primary for the company's own statement), "Update on the on-chain Wallet Activity", 25 Oct: https://coindcx.com/blog/coindcx-news/on-chain-wallet-activity-update-21-oct-2026
-6. CoinDesk (B), "CoinDCX absorbs $16 million loss from internal process failure tied to retired wallet": https://www.coindesk.com/markets/2026/10/26/coindcx-absorbs-usd16-million-loss-from-internal-process-failure-tied-to-retired-wallet
-7. The Block (B), "CoinDCX confirms $16 million loss from retired wallets days after CEO called breach reports a 'false alarm'": https://www.theblock.co/news/business/2026-10-25-coindcx-confirms-16-million-loss-from-retired-wallets-days-after-ceo-called-breach-reports-a-false-alarm-431617
-8. The Block (B), "Paradigm-backed Layer 2 Blast to wind down network as costs exceed revenue": https://www.theblock.co/news/business/2026-10-02-blast-ethereum-layer-2-shutting-down-417583
-9. Blast (A, primary), announcement on X, 2 Oct: https://x.com/blast/status/2106032805280891073
-10. Blast bridge page (A, primary): https://www.blast.io/en/bridge
-11. CME Group (A, primary), "CME Group to Expand Cryptocurrency Derivatives Suite with Bitcoin Cash and Uniswap Futures", 22 Sep: https://www.cmegroup.com/media-room/press-releases/2026/9/22/cme_group_to_expandcryptoderivativessuitewithbitcoincashandunisw.html
-12. CME Group (A, primary), "CME Group Announces First Trade for Bitcoin Cash and Uniswap Futures", 20 Oct: https://www.cmegroup.com/media-room/press-releases/2026/10/20/cme_group_announcesfirsttradeforbitcoincashanduniswapfutures.html
-13. FOW (B, derivatives trade press), "FalconX and GSR execute first CME Bitcoin Cash and Uniswap futures trades": https://www.fow.com/insights/falconx-and-gsr-execute-first-cme-bitcoin-cash-and-uniswap-futures-trades
-14. Kraken public API (OHLC) and Coinbase Exchange public API (candles), BCH/USD daily (A, primary exchange data): https://docs.kraken.com/api/docs/rest-api/get-ohlc-data and https://docs.cdp.coinbase.com/exchange/reference/exchangerestapi_getproductcandles
-15. CoinGecko (C, aggregator, cross-check only), Bitcoin Cash: https://www.coingecko.com/en/coins/bitcoin-cash
+<details class="sources" id="sources" markdown="0">
+<summary>Sources (17), links checked 26 Oct, tap to open</summary>
+<p class="tier-legend">Tier: A = official, primary or major financial press. B = established crypto press with own reporting. C = aggregator, cross-check only.</p>
+<ol>
+<li id="src-1"><a href="https://github.com/spesmilo/electrum/security/advisories/GHSA-6jp4-8v48-cc5v">Electrum, security advisory GHSA-6jp4-8v48-cc5v</a> (A, primary)</li>
+<li id="src-2"><a href="https://raw.githubusercontent.com/spesmilo/electrum/4.8.3/RELEASE-NOTES">Electrum, release notes 4.8.3</a> (A, primary)</li>
+<li id="src-3"><a href="https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments">CoinDesk, wallet bug let rogue servers steal funds</a> (B)</li>
+<li id="src-4"><a href="https://news.bitcoin.com/security/electrum-wallet-attack-hid-bitcoin-theft-behind-a-fee-increase/">Bitcoin.com News, attack hid theft behind a fee increase</a> (B)</li>
+<li id="src-5"><a href="https://coindcx.com/blog/coindcx-news/on-chain-wallet-activity-update-21-oct-2026">CoinDCX, update on on-chain wallet activity, 25 Oct</a> (A, primary for its own statement)</li>
+<li id="src-6"><a href="https://www.coindesk.com/markets/2026/10/26/coindcx-absorbs-usd16-million-loss-from-internal-process-failure-tied-to-retired-wallet">CoinDesk, CoinDCX absorbs $16M loss</a> (B)</li>
+<li id="src-7"><a href="https://www.theblock.co/news/business/2026-10-25-coindcx-confirms-16-million-loss-from-retired-wallets-days-after-ceo-called-breach-reports-a-false-alarm-431617">The Block, CoinDCX confirms $16M loss</a> (B)</li>
+<li id="src-8"><a href="https://www.theblock.co/news/business/2026-10-02-blast-ethereum-layer-2-shutting-down-417583">The Block, Blast to wind down network</a> (B)</li>
+<li id="src-9"><a href="https://x.com/blast/status/2106032805280891073">Blast, announcement on X, 2 Oct</a> (A, primary)</li>
+<li id="src-10"><a href="https://www.blast.io/en/bridge">Blast, bridge page</a> (A, primary)</li>
+<li id="src-11"><a href="https://www.cmegroup.com/media-room/press-releases/2026/9/22/cme_group_to_expandcryptoderivativessuitewithbitcoincashandunisw.html">CME Group, Bitcoin Cash and Uniswap futures announced, 22 Sep</a> (A, primary)</li>
+<li id="src-12"><a href="https://www.cmegroup.com/media-room/press-releases/2026/10/20/cme_group_announcesfirsttradeforbitcoincashanduniswapfutures.html">CME Group, first trade announced, 20 Oct</a> (A, primary)</li>
+<li id="src-13"><a href="https://www.fow.com/insights/falconx-and-gsr-execute-first-cme-bitcoin-cash-and-uniswap-futures-trades">FOW, FalconX and GSR execute first trades</a> (B, derivatives trade press)</li>
+<li id="src-14"><a href="https://docs.kraken.com/api/docs/rest-api/get-ohlc-data">Kraken API, OHLC data</a> and <a href="https://docs.cdp.coinbase.com/exchange/reference/exchangerestapi_getproductcandles">Coinbase Exchange API, candles</a>, BCH/USD daily (A, primary exchange data)</li>
+<li id="src-15"><a href="https://www.coingecko.com/en/coins/bitcoin-cash">CoinGecko, Bitcoin Cash</a> (C, aggregator, cross-check only)</li>
+<li id="src-16"><a href="https://www.cnbc.com/2013/11/29/big-bitcoin-exchange-has-roots-intrading-cards.html">CNBC, big bitcoin exchange has roots in trading cards</a> (A, 29 Nov 2013)</li>
+<li id="src-17"><a href="https://news.bitcoin.com/bitcoin-history-part-9-mt-gox-is-born/">Bitcoin.com News, Bitcoin History Part 9: Mt. Gox Is Born</a> (B)</li>
+</ol>
+</details>
 
-*Data note: the chart shows 92 completed daily BCH/USD candles from Kraken (26 Jul to 25 Oct 2026, UTC; today's unfinished candle is left out). Daily closes are within 0.3% of Coinbase. Chart generated by AI. This article is general information, not financial advice.*
+<p class="data-note" markdown="0"><em>Data note: the chart shows 92 completed daily BCH/USD candles from Kraken (26 Jul to 25 Oct 2026, UTC; today's unfinished candle is left out). Daily closes are within 0.3% of Coinbase. Chart generated by AI. This article is general information, not financial advice.</em></p>
