@@ -35,9 +35,9 @@ img.avatar {
   margin: 0;
 }
 
-// The chart sits directly above the "Currency of the day" item.
+// The chart sits INSIDE the "Currency of the day" section, below its paragraph (BitPet t96u).
 .chart-figure {
-  margin: 1.4em 0 0.9em;
+  margin: 1em 0 0.4em;
 }
 
 .chart-figure img {
@@ -56,4 +56,114 @@ img.avatar {
 
 @media (max-width: 480px) {
   .item { gap: 10px; }
+}
+
+// v3 layout (BitPet t96u, 2026-10-26): header sections with an avatar, "Did you know?", collapsed sources.
+.currency-section,
+.fact-section {
+  margin: 2em 0 1.4em;
+  padding: 0.9em 0 0;
+  border-top: 2px solid #e1e5ee;   // subtle divider before the section
+}
+
+.currency-section {
+  background: #f6f8fc;             // the currency of the day is the highlighted block
+  border: 1px solid #dfe5f1;
+  border-left: 4px solid #3b6fd4;
+  border-radius: 8px;
+  padding: 0.8em 0.9em 0.6em;
+}
+
+.fact-section {
+  background: #fffaf0;
+  border: 1px dashed #e4cf9a;
+  border-radius: 8px;
+  padding: 0.8em 0.9em 0.4em;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 0.6em;
+}
+
+.section-head .avatar {
+  margin: 0;                       // vertically centred beside the heading
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.section-body > p {
+  margin: 0 0 0.6em;
+}
+
+.section-footnote {
+  font-size: 0.85em;
+  color: #6b6b6b;
+}
+
+.section-footnote > p {
+  margin: 0.2em 0 0;
+}
+
+a.cite {
+  text-decoration: none;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+// Sources: collapsed block with a compact numbered list.
+details.sources {
+  margin: 1.6em 0 0.8em;
+  padding: 0.5em 0.8em;
+  border: 1px solid #dfe5f1;
+  border-radius: 8px;
+  background: #fafbfd;
+  font-size: 0.9rem;
+}
+
+details.sources > summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.2em 0;
+}
+
+details.sources .tier-legend {
+  margin: 0.5em 0;
+  font-size: 0.85em;
+  color: #6b6b6b;
+}
+
+details.sources ol {
+  margin: 0.3em 0 0.3em 1.4em;
+  padding: 0;
+}
+
+details.sources li {
+  margin: 0 0 0.35em;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+details.sources li:target {
+  background: #fff7cc;
+}
+
+.data-note {
+  font-size: 0.85em;
+  color: #6b6b6b;
+}
+
+@media (max-width: 480px) {
+  .currency-section,
+  .fact-section { padding: 0.7em 0.7em 0.4em; }
+  .section-head { gap: 10px; }
+  .section-head h2 { font-size: 1.15rem; }
 }

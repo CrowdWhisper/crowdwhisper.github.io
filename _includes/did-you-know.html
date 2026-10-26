@@ -1,0 +1,16 @@
+{%- comment -%}
+  "Did you know?" item (blog only, never in the X post): divider, header with a round 40px avatar, 2 to 3 sentences with a [n] source.
+  Params: avatar (file in /assets/avatars/, e.g. fact-pizza.png made with make_avatar.py emoji pizza), alt (optional), text (markdown, capture it), title (optional, default "Did you know?").
+    {% capture t %}On 22 May 2010 ... [17]{% endcapture %}
+    {% include did-you-know.html avatar="fact-pizza.png" alt="Pizza" text=t %}
+{%- endcomment -%}
+{%- capture dyk_html %}{{ include.text | markdownify }}{% endcapture -%}
+<section class="fact-section" aria-labelledby="did-you-know">
+  <div class="section-head">
+    <img class="avatar" src="{{ '/assets/avatars/' | append: include.avatar | relative_url }}" alt="{{ include.alt | default: '' }}" width="40" height="40" loading="lazy">
+    <h2 id="did-you-know">{{ include.title | default: "Did you know?" }}</h2>
+  </div>
+  <div class="section-body">
+{% include cite-links.html html=dyk_html %}
+  </div>
+</section>

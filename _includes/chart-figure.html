@@ -1,6 +1,7 @@
 {%- comment -%}
-  The chart, placed directly above the "Currency of the day" item.
+  The chart, placed INSIDE the "Currency of the day" section, below its paragraph (BitPet t96u, 2026-10-26).
   Params: src (path under /assets/, e.g. /assets/bch-usd-3m-2026-10-26.png), alt, caption (optional).
+  Normally used through currency-section.html.
 {%- endcomment -%}
 <figure class="chart-figure">
   <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy">

@@ -1,0 +1,20 @@
+{%- comment -%}
+  The whole "Currency of the day" section: divider, header with avatar, the paragraph, THEN the chart below it
+  (so the chart reads as part of this section, not of the previous news item).
+  Params: avatar, alt, title ("Currency of the day: BCH"), text (markdown paragraph, capture it),
+          chart_src, chart_alt, chart_caption (optional), footnote (optional markdown line under the chart, e.g. the price checks).
+    {% capture t %}**BCH** ... [11][12]{% endcapture %}
+    {% include currency-section.html avatar="coin-bch.png" alt="Bitcoin Cash" title="Currency of the day: BCH" text=t chart_src="/assets/bch-usd-3m-2026-10-26.png" chart_alt="BCH/USD daily candlestick chart, last 3 months" %}
+{%- endcomment -%}
+{%- capture cs_html %}{{ include.text | markdownify }}{% endcapture -%}
+<section class="currency-section" aria-labelledby="currency-of-the-day">
+{% include currency-header.html avatar=include.avatar alt=include.alt title=include.title %}
+<div class="section-body">
+{% include cite-links.html html=cs_html %}
+{% include chart-figure.html src=include.chart_src alt=include.chart_alt caption=include.chart_caption %}
+{%- if include.footnote %}
+{%- capture cs_fn %}{{ include.footnote | markdownify }}{% endcapture %}
+<div class="section-footnote">{% include cite-links.html html=cs_fn %}</div>
+{%- endif %}
+</div>
+</section>
