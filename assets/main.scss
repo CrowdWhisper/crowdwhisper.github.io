@@ -1,0 +1,59 @@
+---
+# Jekyll compiles this to /assets/main.css. Keep the import first: it loads the minima theme styles.
+---
+@import "minima";
+
+// News items and chart (BitPet t91u, 2026-10-26)
+// Every news item is a flex row: round 40px avatar, then the text.
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 1.1em;
+}
+
+.item .avatar,
+img.avatar {
+  flex: 0 0 40px;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin: 0.2em 0 0;
+  border-radius: 50%;
+  object-fit: cover;
+  background: transparent;
+  display: block;
+}
+
+.item .item-text {
+  flex: 1 1 auto;
+  min-width: 0;            // lets long words and links wrap on a phone
+  overflow-wrap: anywhere;
+}
+
+.item .item-text > p {
+  margin: 0;
+}
+
+// The chart sits directly above the "Currency of the day" item.
+.chart-figure {
+  margin: 1.4em 0 0.9em;
+}
+
+.chart-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.chart-figure figcaption {
+  margin-top: 0.4em;
+  font-size: 0.8em;
+  color: #828282;
+}
+
+@media (max-width: 480px) {
+  .item { gap: 10px; }
+}
