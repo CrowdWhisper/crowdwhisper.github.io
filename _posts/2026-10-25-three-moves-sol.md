@@ -15,6 +15,8 @@ date: 2026-10-25 21:00:00 +0100
 
 **Our currency of the day is SOL.** Solana switched its core consensus protocol, called Alpenglow, on October 21, and on-chain records confirm the handover at slot 459,653,000, right after a block timed 13:54 UTC [14][15][16]. The design target is about 150 milliseconds to finality, down from about 12.8 seconds, and nobody has independently measured it yet [15][16]. In the chart above, SOL traded near $102 on October 25, after a peak near $125 on September 27 [4]. An upgrade says nothing certain about price. We left out claims without two independent origins.
 
+{% include team-picture.html %}
+
 ## Sources (links checked 2026-10-25)
 Tier A = official, primary or major financial press. Tier B = established crypto press with own reporting. Items marked "text copy" reproduce a primary statement and are not counted as independent confirmation.
 1. CoinDesk (B), "Crypto under weekend pressure, bitcoin slides below $80,000": https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations
