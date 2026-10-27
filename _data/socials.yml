@@ -10,3 +10,7 @@
   label: CrowdWhisper on X
   url: https://x.com/CrowdWhisperers
   icon: x
+- name: Telegram
+  label: CrowdWhisper on Telegram
+  url: https://t.me/CrowdWhisper
+  icon: telegram
