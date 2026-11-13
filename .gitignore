@@ -1,0 +1,7 @@
+# Jekyll build output (never commit; a stale _site/ once held comments
+# that must not appear in this repo).
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/bundle/
