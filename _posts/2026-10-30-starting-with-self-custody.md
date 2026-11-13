@@ -7,11 +7,11 @@ date: 2026-10-30 23:10:00 +0100
 
 **The idea.** When you buy crypto on an exchange, the exchange usually holds it for you. You see a balance in the app, but the exchange keeps the keys that actually control the coins. Self-custody means you hold those keys yourself, in a wallet only you control. People often sum it up as "not your keys, not your coins."
 
-**Why people do it.** An exchange can pause withdrawals, get hacked or run into trouble, and then you wait for it to fix things. This week many users saw that in practice when a large exchange paused withdrawals after a hack ([our report](/2026/10/30/binance-hack-tied-to-north-korea.html)). It is not new: in January 2018 the Japanese exchange Coincheck lost about $530 million in NEM tokens kept in an online wallet [3][4]. Self-custody removes that middleman. The flip side is real too: there is no help desk. If you lose your keys, nobody can reset them for you.
+**Why people do it.** An exchange can pause withdrawals, get hacked or run into trouble, and then you wait for it to fix things. This week many users saw that in practice when a large exchange paused withdrawals after a hack ([our report](/2026/10/30/binance-hack-tied-to-north-korea.html)). It is not new: in January 2018 the Japanese exchange Coincheck lost about $530 million in NEM tokens kept in an online wallet <a class="cite" href="#src-3">[3]</a><a class="cite" href="#src-4">[4]</a>. Self-custody removes that middleman. The flip side is real too: there is no help desk. If you lose your keys, nobody can reset them for you.
 
-**What a wallet really is.** A crypto wallet does not store coins the way a purse stores cash. The coins stay on the blockchain; the wallet holds the secret key that lets you move them. There are two common types. A software wallet is an app on your phone or computer. A hardware wallet is a small device that keeps the key offline and asks you to confirm each payment with a button. Many people start with an app for small amounts and move to a hardware device once the amount matters to them [1][2]. Buy a hardware wallet only from the maker's own shop or an official reseller, never second-hand.
+**What a wallet really is.** A crypto wallet does not store coins the way a purse stores cash. The coins stay on the blockchain; the wallet holds the secret key that lets you move them. There are two common types. A software wallet is an app on your phone or computer. A hardware wallet is a small device that keeps the key offline and asks you to confirm each payment with a button. Many people start with an app for small amounts and move to a hardware device once the amount matters to them <a class="cite" href="#src-1">[1]</a><a class="cite" href="#src-2">[2]</a>. Buy a hardware wallet only from the maker's own shop or an official reseller, never second-hand.
 
-**The recovery phrase.** When you set up a wallet, it shows you a list of 12 or 24 words. This recovery phrase (also called a seed phrase) is the master key: anyone who has those words can take everything in the wallet, from anywhere in the world [1][2]. So:
+**The recovery phrase.** When you set up a wallet, it shows you a list of 12 or 24 words. This recovery phrase (also called a seed phrase) is the master key: anyone who has those words can take everything in the wallet, from anywhere in the world <a class="cite" href="#src-1">[1]</a><a class="cite" href="#src-2">[2]</a>. So:
 
 - Write it down on paper, by hand, and keep it somewhere safe and private.
 - Never take a photo of it, never type it into a notes app, email or cloud drive.
@@ -21,17 +21,19 @@ date: 2026-10-30 23:10:00 +0100
 
 **Check every address.** Crypto payments cannot be reversed. Before you send, compare the receiving address carefully, at least the first and last several characters, and on a hardware wallet check it on the device screen itself. Some malware swaps copied addresses, and scammers create look-alike addresses that differ only in the middle.
 
-**Watch out for phishing.** Most losses do not come from broken technology but from tricks. Typical ones: fake wallet apps in app stores, websites that look like the real wallet, messages saying your wallet is "at risk" and you must "verify" your words, and "support staff" who contact you first on X, Telegram or Discord [2]. Download wallet apps only via the link on the maker's official site. Be wary of any site asking you to "connect" your wallet or sign something you do not understand. Urgency is a red flag.
+**Watch out for phishing.** Most losses do not come from broken technology but from tricks. Typical ones: fake wallet apps in app stores, websites that look like the real wallet, messages saying your wallet is "at risk" and you must "verify" your words, and "support staff" who contact you first on X, Telegram or Discord <a class="cite" href="#src-2">[2]</a>. Download wallet apps only via the link on the maker's official site. Be wary of any site asking you to "connect" your wallet or sign something you do not understand. Urgency is a red flag.
 
 **Is it for you?** Self-custody gives you control and also full responsibility. Some people keep a small amount on an exchange for trading and the rest in their own wallet; others decide an exchange suits them better for now. Both are choices, not rules. Go at your own pace, keep the amounts small while you learn, and never act on a promise of fast gains.
 
 {% include team-picture.html %}
 
-<details><summary>Sources</summary>
-
-1. [Bitcoin.org: Secure your wallet](https://bitcoin.org/en/secure-your-wallet) (B, project guide)
-2. [Ethereum.org: Ethereum security and scam prevention](https://ethereum.org/en/security/) (B, project guide)
-3. [BBC: Coincheck, world's biggest ever digital currency theft (Jan 2018)](https://www.bbc.com/news/world-asia-42845505) (A)
-4. [Wikipedia: Coincheck](https://en.wikipedia.org/wiki/Coincheck) (C, context only)
-
+<details class="sources" id="sources" markdown="0">
+<summary>Sources (4), links checked 13 Nov, tap to open</summary>
+<p class="tier-legend">Tier: A = official, primary or major financial press. B = established crypto press with own reporting. C = aggregator, cross-check only.</p>
+<ol>
+<li id="src-1"><a href="https://bitcoin.org/en/secure-your-wallet">Bitcoin.org: Secure your wallet</a> (B, project guide)</li>
+<li id="src-2"><a href="https://ethereum.org/en/security/">Ethereum.org: Ethereum security and scam prevention</a> (B, project guide)</li>
+<li id="src-3"><a href="https://www.bbc.com/news/world-asia-42845505">BBC: Coincheck, world's biggest ever digital currency theft (Jan 2018)</a> (A)</li>
+<li id="src-4"><a href="https://en.wikipedia.org/wiki/Coincheck">Wikipedia: Coincheck</a> (C, context only)</li>
+</ol>
 </details>

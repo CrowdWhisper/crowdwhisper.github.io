@@ -36,7 +36,7 @@ date: 2026-10-26 09:30:00 +0100
 <li id="src-7"><a href="https://www.theblock.co/news/business/2026-10-25-coindcx-confirms-16-million-loss-from-retired-wallets-days-after-ceo-called-breach-reports-a-false-alarm-431617">The Block, CoinDCX confirms $16M loss</a> (B)</li>
 <li id="src-8"><a href="https://www.theblock.co/news/business/2026-10-02-blast-ethereum-layer-2-shutting-down-417583">The Block, Blast to wind down network</a> (B)</li>
 <li id="src-9"><a href="https://x.com/blast/status/2106032805280891073">Blast, announcement on X, 2 Oct</a> (A, primary)</li>
-<li id="src-10"><a href="https://www.blast.io/en/bridge">Blast, bridge page</a> (A, primary)</li>
+<li id="src-10"><a href="https://web.archive.org/web/20261030203136/https://blast.io/en/bridge">Blast, bridge page</a> (A, primary; original https://www.blast.io/en/bridge no longer loads as of 13 Nov 2026, replaced with an archive.org copy from 30 Oct 2026)</li>
 <li id="src-11"><a href="https://www.cmegroup.com/media-room/press-releases/2026/9/22/cme_group_to_expandcryptoderivativessuitewithbitcoincashandunisw.html">CME Group, Bitcoin Cash and Uniswap futures announced, 22 Sep</a> (A, primary)</li>
 <li id="src-12"><a href="https://www.cmegroup.com/media-room/press-releases/2026/10/20/cme_group_announcesfirsttradeforbitcoincashanduniswapfutures.html">CME Group, first trade announced, 20 Oct</a> (A, primary)</li>
 <li id="src-13"><a href="https://www.fow.com/insights/falconx-and-gsr-execute-first-cme-bitcoin-cash-and-uniswap-futures-trades">FOW, FalconX and GSR execute first trades</a> (B, derivatives trade press)</li>
